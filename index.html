@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniking</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/all.css" /> -->
+  </head>
+  <body>
+    <header class="header">
+      <section class="wrapper">
+        <div class="header_top--bar">
+          <div>
+            <span class="header_top--bar-text">Welcome to our online shop</span>
+          </div>
+          <div>
+            <span class="header_top--bar-text header_top--text-select"
+              >English (USD)</span
+            >
+            <span class="header_top--bar-text header_top--text-divide"
+              >Login or Sign up</span
+            >
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="wrapper header_search--bar">
+      <div class="header_search--bar-logo">
+        <a class="header_logo--link" href="#">
+          <img src="./assets/svg/logo.svg" alt="логотип сайта" />
+          <span class="header_logo--text">Furniking</span>
+        </a>
+      </div>
+      <form class="col-2 header_search">
+        <input class="search_input" type="text" placeholder="Search here" />
+        <div>
+          <select class="select_input" name="Categories">
+            <option value="1">Armchair</option>
+            <option value="2">Tabble</option>
+            <option value="3">Sofa</option>
+            <option value="4">Chair</option>
+            <option value="5">Mirrors</option>
+          </select>
+        </div>
+        <button class="search_btn"></button>
+      </form>
+      <div class="">
+        <a class="header_link--icon header_link--basket" href="#">
+          <img src="./assets/svg/basket.svg" alt="корзина заказов" />
+        </a>
+        <a class="header_link--icon header_link--notification" href="#">
+          <svg
+            width="22"
+            height="24"
+            viewBox="0 0 22 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11 18.335C17.1092 18.335 19.9354 17.5513 20.2084 14.4056C20.2084 11.2621 18.2379 11.4643 18.2379 7.60728C18.2379 4.59457 15.3824 1.16675 11 1.16675C6.61769 1.16675 3.76211 4.59457 3.76211 7.60728C3.76211 11.4643 1.79169 11.2621 1.79169 14.4056C2.06572 17.5632 4.89194 18.335 11 18.335Z"
+              stroke="#555555"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.5879 21.5955C12.1101 23.2364 9.80476 23.2559 8.31281 21.5955"
+              stroke="#555555"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <a class="header_link--icon header_link--avatar" href="#">
+          <img src="./assets/svg/persona.svg" alt="профиль пользователя" />
+        </a>
+      </div>
+    </section>
+    <!-- </header> -->
+    <div class="nav_menu">
+      <div class="wrapper row">
+        <div class="col-1 nav_menu--container nav_menu--container-left">
+          <div><span class="nav_menu--text">ALL COLLECTIONS</span></div>
+        </div>
+        <div class="col-3 nav_menu--container nav_menu--container-right">
+          <ul class="nav_menu--list">
+            <li class="nav_menu--item">
+              <a class="nav_menu--link" href="#">HOME</a>
+            </li>
+            <li class="nav_menu--item">
+              <a class="nav_menu--link" href="#">SHOP</a>
+            </li>
+            <li class="nav_menu--item">
+              <a class="nav_menu--link" href="#">BLOG</a>
+            </li>
+            <li class="nav_menu--item">
+              <a class="nav_menu--link" href="#">ABOUT</a>
+            </li>
+            <li class="nav_menu--item">
+              <a class="nav_menu--link" href="#">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-1 nav_menu--categories">
+          <ul class="nav_categories--list">
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">All</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">New Arrivals</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Hot Sale</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Furniture</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Amrature</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Tabble</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Chair</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Sofa</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Mirrors</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Stools</a>
+            </li>
+            <li class="nav_categories--item">
+              <a class="nav_categories--link" href="#">Benches</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 nav_menu--slider">
+          <div style="margin-left: -18px; height: 100%">
+            <div class="nav_slider--container">
+              <div class="nav_slider--left">
+                <span class="nav_slider--title">TOP COLLECTIONS 2022</span>
+                <span class="nav_slider--text"
+                  >We Serve Your Dream Furniture</span
+                >
+                <span class="nav_slider--discount"
+                  >Get 50% off all products</span
+                >
+                <button class="nav_slider--btn">SHOP NOW</button>
+              </div>
+              <div class="nav_slider--right">
+                <div class="nav_slider--wrapper">
+                  <a class="nav_slider--link" href="#">
+                    <img
+                      src="./assets/png/armchair-1.png"
+                      alt="на картинке изображено кресло"
+                    />
+                  </a>
+                  <span class="nav_slider--amount">$120</span>
+                  <span class="nav_slider--name">Office Desk Chair</span>
+                </div>
+                <div class="nav_slider--wrapper">
+                  <a class="nav_slider--link" href="#">
+                    <img
+                      src="./assets/png/armchair-2.png"
+                      alt="на картинке изображено кресло"
+                    />
+                  </a>
+                  <span class="nav_slider--amount">$180</span>
+                  <span class="nav_slider--name">Home Alisa Sofa</span>
+                </div>
+                <div class="nav_slider--wrapper">
+                  <a class="nav_slider--link" href="#">
+                    <img
+                      src="./assets/png/armchair-3.png"
+                      alt="на картинке изображено кресло"
+                    />
+                  </a>
+                  <span class="nav_slider--amount">$250</span>
+                  <span class="nav_slider--name">Modern Chair</span>
+                </div>
+              </div>
+              <div class="nav_slider--container-btn">
+                <button class="slider--btn"></button>
+                <button class="slider--btn"></button>
+                <button class="slider--btn slider--btn-active"></button>
+                <button class="slider--btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="wrapper">
+      <div class="feature row">
+        <div class="feature_container feature_container--delivery">
+          <div class="feature_container--text">
+            <span class="feature_title">Free Shipping</span>
+            <span class="feature_text">Orders over $100</span>
+          </div>
+        </div>
+        <div class="feature_container feature_container--gift">
+          <div class="feature_container--text">
+            <span class="feature_title">Smart Gift Card</span>
+            <span class="feature_text">Buy $1000 to get card</span>
+          </div>
+        </div>
+        <div class="feature_container feature_container--payment">
+          <div class="feature_container--text">
+            <span class="feature_title">Quick Payment</span>
+            <span class="feature_text">100% secure payment</span>
+          </div>
+        </div>
+        <div class="feature_container feature_container--support">
+          <div class="feature_container--text">
+            <span class="feature_title">24/7 Support</span>
+            <span class="feature_text">Quick support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper offer row">
+      <div
+        class="col-2 offer_container offer_container--max-width offer_bg--left"
+      >
+        <span class="offer_furniture--name">Modern Furniture Collections</span>
+        <span class="offer_discount">Starting from $500</span>
+        <a class="offer_link" href="#">
+          <span class="offer_description">Read more</span>
+        </a>
+      </div>
+      <div class="col-2 offer_container offer_container--min-width">
+        <div class="offer_container--right offer_bg--right-top">
+          <span class="offer_furniture--name">Geometric Bookcase</span>
+          <span class="offer_discount">Up to 20% discount</span>
+          <a class="offer_link" href="#">
+            <span class="offer_description">Read more</span>
+          </a>
+        </div>
+        <div class="offer_container--right offer_bg--right-bottom">
+          <span class="offer_furniture--name">Minimal Sofa collections </span>
+          <span class="offer_discount">Sale upto 40% discount</span>
+          <a class="offer_link" href="#">
+            <span class="offer_description">Read more</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="trending">
+      <section class="wrapper">
+        <h1>TRENDING</h1>
+        <ul>
+          <li><a href="#">Top Products</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Best Sellers</a></li>
+        </ul>
+        <div class="row trending_product">
+          <div class="col-1">
+            <a href="#">
+              <img src="./assets/png/Container.png" alt="" />
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="#">
+              <img src="./assets/png/Container (1).png" alt="" />
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="#">
+              <img src="./assets/png/Container (2).png" alt="" />
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="#">
+              <img src="./assets/png/Container (3).png" alt="" />
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="#">
+              <img src="./assets/png/Container (4).png" alt="" />
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="#">
+              <img src="./assets/png/Container (5).png" alt="" />
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="#">
+              <img src="./assets/png/Container (6).png" alt="" />
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="#">
+              <img src="./assets/png/Container (7).png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
+
+<!-- <header class="header">
+    <div class="header_notice">
+      <div class="notice_container">
+        <span class="notice_text"
+          >This page places and reads third party cookies on your browser.
+          Click <a href="#">here</a> to read more.</span
+        >
+      </div>
+      <div class="notice_container">
+        <button class="notice_btn-black">ACCEPT</button>
+        <button class="notice_btn-white">REJECT</button>
+      </div>
+    </div>
+    <div class="header_bar">
+      <a id="logo" href="#">
+        <img
+          id="logo_img"
+          src="./assets/webp/monstercat-logo.webp"
+          alt="логотип сайта"
+        />
+      </a>
+      <ul class="list_social">
+        <li class="item_social">
+          <a
+            class="link_social"
+            href="#"
+            target="_blank"
+            title="Monstercat on Instagram"
+          >
+            <i class="fab fa-fw fa-instagram"></i>
+          </a>
+        </li>
+        <li class="item_social">
+          <a class="link_social" href="#">
+            <i class="fab fa-fw fa-tiktok"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-fw fa-twitch"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-fw fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-fw fa-discord"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#"> <svg></svg></a>
+        </li>
+      </ul>
+      <button class="menu_toggle">
+        <span></span>
+        <i class="fal fa-bars"></i>
+      </button>
+    </div>
+  </header>
+  <!-- <i class="fas fa-user"></i> <!-- uses solid style -->
+<!-- <i class="far fa-user"></i> uses regular style -->
+<!-- <i class="fal fa-user"></i> uses light style -->
+<!--brand icon-->
+<!-- <i class="fab fa-github-square"> -->
