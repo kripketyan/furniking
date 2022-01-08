@@ -9,89 +9,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500&family=Mulish:wght@400;600;700;800&family=DM+Sans&display=swap"
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="./css/all.css" /> -->
   </head>
     <header class="header">
-      <section class="wrapper">
-        <div class="header_top">
+      <div class="header_top">
+        <div class="wrapper header_wrapper">
           <div>
-            <span class="top_text">Welcome to our online shop</span>
+            <span class="header_text">Welcome to our online shop</span>
           </div>
           <div>
-            <span class="top_text top_text--select"
-              >English (USD)</span
-            >
-            <span class="top_text top_text--divide"
+            <span class="header_text header_text--select"
+              >English (USD)</span>
+            <span class="header_text header_text--divide"
               >Login or Sign up</span>
           </div>
         </div>
+      </div>
+      <section class="wrapper header_bottom">
+        <div class="logo">
+          <a class="logo_link" href="#">
+            <img src="./assets/svg/logo.svg" alt="логотип сайта" />
+            <span class="logo_text">Furniking</span>
+          </a>
+        </div>
+        <form class="col-2 header_search search">
+          <input class="search_input" type="text" placeholder="Search here" />
+          <div>
+            <select class="search_select" name="Categories">
+              <option value="1">Armchair</option>
+              <option value="2">Tabble</option>
+              <option value="3">Sofa</option>
+              <option value="4">Chair</option>
+              <option value="5">Mirrors</option>
+            </select>
+          </div>
+          <button class="search_btn"></button>
+        </form>
+        <div class="header_links">
+          <a class="header_link header_link--basket" href="#">
+            <img src="./assets/svg/basket.svg" alt="корзина заказов" />
+            <span class="header_goods-counter">4</span>
+          </a>
+          <a class="header_link header_link--notification" href="#">
+            <img src="./assets/svg/icon.svg" alt="">
+          </a>
+          <a class="header_link header_link--avatar" href="#">
+            <img src="./assets/svg/persona.svg" alt="профиль пользователя" />
+          </a>
+        </div>
       </section>
     </header>
-    <section class="wrapper header_search">
-      <div class="logo">
-        <a class="logo_link" href="#">
-          <img src="./assets/svg/logo.svg" alt="логотип сайта" />
-          <span class="logo_text">Furniking</span>
-        </a>
-      </div>
-      <form class="col-2 header_search">
-        <!-- search_form -->
-        <input class="search_input" type="text" placeholder="Search here" />
-        <div>
-          <select class="select_input" name="Categories">
-            <option value="1">Armchair</option>
-            <option value="2">Tabble</option>
-            <option value="3">Sofa</option>
-            <option value="4">Chair</option>
-            <option value="5">Mirrors</option>
-          </select>
-        </div>
-        <button class="search_btn"></button>
-      </form>
-      <div class="link-icon">
-        <a class="link_icon link_icon--basket" href="#">
-          <img src="./assets/svg/basket.svg" alt="корзина заказов" />
-        </a>
-        <a class="link_icon link_icon--notification" href="#">
-          <img src="./assets/svg/icon.svg" alt="">
-        </a>
-        <a class="link_icon link_icon--avatar" href="#">
-          <img src="./assets/svg/persona.svg" alt="профиль пользователя" />
-        </a>
-      </div>
-    </section>
-    <div class="nav_menu">
+    <div class="nav">
       <div class="wrapper row">
-        <div class="col-1 nav_menu--container nav_menu--container-left">
-          <div><span class="nav_menu--text">ALL COLLECTIONS</span></div>
+        <div class="col-1 nav_title">
+          ALL COLLECTIONS
         </div>
-        <div class="col-3 nav_menu--container nav_menu--container-right">
-          <ul class="nav_menu--list">
-            <li class="nav_menu--item">
-              <a class="nav_menu--link" href="#">HOME</a>
+        <div class="col-3 nav_pages">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a class="nav_link" href="#">HOME</a>
             </li>
-            <li class="nav_menu--item">
-              <a class="nav_menu--link" href="#">SHOP</a>
+            <li class="nav_item">
+              <a class="nav_link" href="#">SHOP</a>
             </li>
-            <li class="nav_menu--item">
-              <a class="nav_menu--link" href="#">BLOG</a>
+            <li class="nav_item">
+              <a class="nav_link" href="#">BLOG</a>
             </li>
-            <li class="nav_menu--item">
-              <a class="nav_menu--link" href="#">ABOUT</a>
+            <li class="nav_item">
+              <a class="nav_link" href="#">ABOUT</a>
             </li>
-            <li class="nav_menu--item">
-              <a class="nav_menu--link" href="#">CONTACT US</a>
+            <li class="nav_item">
+              <a class="nav_link" href="#">CONTACT US</a>
             </li>
           </ul>
         </div>
@@ -99,93 +90,92 @@
     </div>
     <div class="wrapper">
       <div class="row">
-        <div class="col-1 nav_menu--categories">
-          <ul class="nav_categories--list">
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">All</a>
+        <div class="col-1 nav_categories">
+          <ul class="nav_categories-list">
+            <!-- class="categories_list" -->
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">All</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">New Arrivals</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">New Arrivals</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Hot Sale</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Hot Sale</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Furniture</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Furniture</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Amrature</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Amrature</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Tabble</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Tabble</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Chair</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Chair</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Sofa</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Sofa</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Mirrors</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Mirrors</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Stools</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Stools</a>
             </li>
-            <li class="nav_categories--item">
-              <a class="nav_categories--link" href="#">Benches</a>
+            <li class="nav_category-item">
+              <a class="nav_category-link" href="#">Benches</a>
             </li>
           </ul>
         </div>
-        <div class="col-3 nav_menu--slider">
-          <div style="margin-left: -18px; height: 100%">
-            <div class="nav_slider--container">
-              <div class="nav_slider--left">
-                <span class="nav_slider--title">TOP COLLECTIONS 2022</span>
-                <span class="nav_slider--text"
-                  >We Serve Your Dream Furniture</span
-                >
-                <span class="nav_slider--discount"
-                  >Get 50% off all products</span
-                >
-                <button class="nav_slider--btn">SHOP NOW</button>
+        <div class="col-3 slider">
+          <div class="nav_slider">
+            <div class="slider_container">
+              <div class="slider_left">
+                <span class="slider_title">TOP COLLECTIONS 2022</span>
+                <span class="slider_text"
+                  >We Serve Your Dream Furniture</span>
+                <span class="slider_discount"
+                  >Get 50% off all products</span>
+                <button class="slider_btn-left">SHOP NOW</button>
               </div>
-              <div class="nav_slider--right">
-                <div class="nav_slider--wrapper">
-                  <a class="nav_slider--link" href="#">
+              <div class="slider_right">
+                <div class="slider_wrapper">
+                  <a class="slider_link" href="#">
                     <img
                       src="./assets/png/armchair-1.png"
                       alt="на картинке изображено кресло"
                     />
                   </a>
-                  <span class="nav_slider--amount">$120</span>
-                  <span class="nav_slider--name">Office Desk Chair</span>
+                  <span class="slider_amount">$120</span>
+                  <span class="slider_name">Office Desk Chair</span>
                 </div>
-                <div class="nav_slider--wrapper">
-                  <a class="nav_slider--link" href="#">
+                <div class="slider_wrapper">
+                  <a class="slider_link" href="#">
                     <img
                       src="./assets/png/armchair-2.png"
                       alt="на картинке изображено кресло"
                     />
                   </a>
-                  <span class="nav_slider--amount">$180</span>
-                  <span class="nav_slider--name">Home Alisa Sofa</span>
+                  <span class="slider_amount">$180</span>
+                  <span class="slider_name">Home Alisa Sofa</span>
                 </div>
-                <div class="nav_slider--wrapper">
-                  <a class="nav_slider--link" href="#">
+                <div class="slider_wrapper">
+                  <a class="slider_link" href="#">
                     <img
                       src="./assets/png/armchair-3.png"
                       alt="на картинке изображено кресло"
                     />
                   </a>
-                  <span class="nav_slider--amount">$250</span>
-                  <span class="nav_slider--name">Modern Chair</span>
+                  <span class="slider_amount">$250</span>
+                  <span class="slider_name">Modern Chair</span>
                 </div>
               </div>
-              <div class="nav_slider--container-btn">
-                <button class="slider--btn"></button>
-                <button class="slider--btn"></button>
-                <button class="slider--btn slider--btn-active"></button>
-                <button class="slider--btn"></button>
+              <div class="slider_btn-bottom">
+                <button class="slider_btn"></button>
+                <button class="slider_btn"></button>
+                <button class="slider_btn slider_btn--active"></button>
+                <button class="slider_btn"></button>
               </div>
             </div>
           </div>
@@ -193,54 +183,56 @@
       </div>
     </div>
     <section class="wrapper">
-      <div class="feature row">
-        <div class="feature_container feature_container--delivery">
-          <div class="feature_container--text">
+      <div class="row feature">
+        <div class="feature_wrapper feature_wrapper--delivery">
+          <div class="feature_container">
             <span class="feature_title">Free Shipping</span>
             <span class="feature_text">Orders over $100</span>
           </div>
         </div>
-        <div class="feature_container feature_container--gift">
-          <div class="feature_container--text">
+        <div class="feature_wrapper feature_wrapper--gift">
+          <div class="feature_container">
             <span class="feature_title">Smart Gift Card</span>
             <span class="feature_text">Buy $1000 to get card</span>
           </div>
         </div>
-        <div class="feature_container feature_container--payment">
-          <div class="feature_container--text">
+        <div class="feature_wrapper feature_wrapper--payment">
+          <div class="feature_container">
             <span class="feature_title">Quick Payment</span>
             <span class="feature_text">100% secure payment</span>
           </div>
         </div>
-        <div class="feature_container feature_container--support">
-          <div class="feature_container--text">
+        <div class="feature_wrapper feature_wrapper--support">
+          <div class="feature_container">
             <span class="feature_title">24/7 Support</span>
             <span class="feature_text">Quick support</span>
           </div>
         </div>
       </div>
     </section>
-    <section class="wrapper offer row">
+    <section class="wrapper row offers-section">
       <div
-        class="col-2 offer_container offer_container--max-width offer_bg--left"
-      >
-        <span class="offer_furniture--name">Modern Furniture Collections</span>
+        class="col-2 offer">
+        <img src="./assets/png/offer-3.png" alt="" class="offer_img">
+        <span class="offer_name">Modern Furniture Collections</span>
         <span class="offer_discount">Starting from $500</span>
         <a class="offer_link" href="#">
           <span class="offer_description">Read more</span>
         </a>
       </div>
-      <div class="col-2 offer_container offer_container--min-width">
-        <div class="offer_container--right offer_bg--right-top">
-          <span class="offer_furniture--name">Geometric Bookcase</span>
+      <div class="col-2 offers-section_column">
+        <div class="offer offers-section_row">
+          <img src="./assets/png/offer-2.png" alt="" class="offer_img">
+          <span class="offer_name">Geometric Bookcase</span>
           <span class="offer_discount">Up to 20% discount</span>
           <a class="offer_link" href="#">
             <span class="offer_description">Read more</span>
           </a>
         </div>
-        <div class="offer_container--right offer_bg--right-bottom">
-          <span class="offer_furniture--name">Minimal Sofa collections </span>
-          <span class="offer_discount">Sale upto 40% discount</span>
+        <div class="offer offers-section_row">
+          <img src="./assets/png/offer-1.png" alt="" class="offer_img">
+          <span class="offer_name">Minimal Sofa collections </span>
+          <span class="offer_discount">Sale up to 40% discount</span>
           <a class="offer_link" href="#">
             <span class="offer_description">Read more</span>
           </a>
