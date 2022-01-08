@@ -12,46 +12,41 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="./css/all.css" /> -->
   </head>
-  <body>
     <header class="header">
       <section class="wrapper">
-        <div class="header_top--bar">
+        <div class="header_top">
           <div>
-            <span class="header_top--bar-text">Welcome to our online shop</span>
+            <span class="top_text">Welcome to our online shop</span>
           </div>
           <div>
-            <span class="header_top--bar-text header_top--text-select"
+            <span class="top_text top_text--select"
               >English (USD)</span
             >
-            <span class="header_top--bar-text header_top--text-divide"
-              >Login or Sign up</span
-            >
+            <span class="top_text top_text--divide"
+              >Login or Sign up</span>
           </div>
         </div>
       </section>
     </header>
-    <section class="wrapper header_search--bar">
-      <div class="header_search--bar-logo">
-        <a class="header_logo--link" href="#">
+    <section class="wrapper header_search">
+      <div class="logo">
+        <a class="logo_link" href="#">
           <img src="./assets/svg/logo.svg" alt="логотип сайта" />
-          <span class="header_logo--text">Furniking</span>
+          <span class="logo_text">Furniking</span>
         </a>
       </div>
       <form class="col-2 header_search">
+        <!-- search_form -->
         <input class="search_input" type="text" placeholder="Search here" />
         <div>
           <select class="select_input" name="Categories">
@@ -64,42 +59,18 @@
         </div>
         <button class="search_btn"></button>
       </form>
-      <div class="">
-        <a class="header_link--icon header_link--basket" href="#">
+      <div class="link-icon">
+        <a class="link_icon link_icon--basket" href="#">
           <img src="./assets/svg/basket.svg" alt="корзина заказов" />
         </a>
-        <a class="header_link--icon header_link--notification" href="#">
-          <svg
-            width="22"
-            height="24"
-            viewBox="0 0 22 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M11 18.335C17.1092 18.335 19.9354 17.5513 20.2084 14.4056C20.2084 11.2621 18.2379 11.4643 18.2379 7.60728C18.2379 4.59457 15.3824 1.16675 11 1.16675C6.61769 1.16675 3.76211 4.59457 3.76211 7.60728C3.76211 11.4643 1.79169 11.2621 1.79169 14.4056C2.06572 17.5632 4.89194 18.335 11 18.335Z"
-              stroke="#555555"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M13.5879 21.5955C12.1101 23.2364 9.80476 23.2559 8.31281 21.5955"
-              stroke="#555555"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+        <a class="link_icon link_icon--notification" href="#">
+          <img src="./assets/svg/icon.svg" alt="">
         </a>
-        <a class="header_link--icon header_link--avatar" href="#">
+        <a class="link_icon link_icon--avatar" href="#">
           <img src="./assets/svg/persona.svg" alt="профиль пользователя" />
         </a>
       </div>
     </section>
-    <!-- </header> -->
     <div class="nav_menu">
       <div class="wrapper row">
         <div class="col-1 nav_menu--container nav_menu--container-left">
@@ -284,48 +255,318 @@
           <li><a href="#">New Arrivals</a></li>
           <li><a href="#">Best Sellers</a></li>
         </ul>
-        <div class="row trending_product">
-          <div class="col-1">
-            <a href="#">
-              <img src="./assets/png/Container.png" alt="" />
-            </a>
+        <div>
+          <div class="row trending_product">
+            <div class="col-1">
+              <a href="#">
+                <img src="./assets/png/Container.png" alt="" />
+              </a>
+              <span>New</span>
+              <span>Chair</span>
+              <span>Minimal LCD chair</span>
+              <div>
+                <span>$180</span>
+                <span>$250</span>
+              </div>
+              <div>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="col-1">
+              <a href="#">
+                <img src="./assets/png/Container (1).png" alt="" />
+              </a>
+              <span>New</span>
+              <span>Chair</span>
+              <span>Minimal iconic chair</span>
+              <div>
+                <span>$120</span>
+                <span>$150</span>
+              </div>
+              <div>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="col-1">
+              <a href="#">
+                <img src="./assets/png/Container (2).png" alt="" />
+              </a>
+              <span>New</span>
+              <span>Chair</span>
+              <span>Dining chairs</span>
+              <div>
+                <span>$100</span>
+                <span>$120</span>
+              </div>
+              <div>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="col-1">
+              <a href="#">
+                <img src="./assets/png/Container (3).png" alt="" />
+              </a>
+              <span>New</span>
+              <span>Chair</span>
+              <span>Buskbo armchair</span>
+              <div>
+                <span>$130</span>
+                <span>$150</span>
+              </div>
+              <div>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="col-1">
-            <a href="#">
-              <img src="./assets/png/Container (1).png" alt="" />
-            </a>
+          <div class="row trending_product">
+            <div class="col-1">
+              <a href="#">
+                <img src="./assets/png/Container (4).png" alt="" />
+              </a>
+              <span>New</span>
+              <span>Chair</span>
+              <span>Buskbo armchair</span>
+              <div>
+                <span>$130</span>
+                <span>$150</span>
+              </div>
+              <div>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="col-1">
+              <a href="#">
+                <img src="./assets/png/Container (5).png" alt="" />
+              </a>
+              <span>New</span>
+              <span>Chair</span>
+              <span>Buskbo armchair</span>
+              <div>
+                <span>$130</span>
+                <span>$150</span>
+              </div>
+              <div>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="col-1">
+              <a href="#">
+                <img src="./assets/png/Container (6).png" alt="" />
+              </a>
+              <span>New</span>
+              <span>Chair</span>
+              <span>Buskbo armchair</span>
+              <div>
+                <span>$130</span>
+                <span>$150</span>
+              </div>
+              <div>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="col-1">
+              <a href="#">
+                <img src="./assets/png/Container (7).png" alt="" />
+              </a>
+              <span>New</span>
+              <span>Chair</span>
+              <span>Buskbo armchair</span>
+              <div>
+                <span>$130</span>
+                <span>$150</span>
+              </div>
+              <div>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+                <button>
+                  <img src="./assets/svg/star.svg" alt="" />
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="col-1">
-            <a href="#">
-              <img src="./assets/png/Container (2).png" alt="" />
-            </a>
-          </div>
-          <div class="col-1">
-            <a href="#">
-              <img src="./assets/png/Container (3).png" alt="" />
-            </a>
-          </div>
-          <div class="col-1">
-            <a href="#">
-              <img src="./assets/png/Container (4).png" alt="" />
-            </a>
-          </div>
-          <div class="col-1">
-            <a href="#">
-              <img src="./assets/png/Container (5).png" alt="" />
-            </a>
-          </div>
-          <div class="col-1">
-            <a href="#">
-              <img src="./assets/png/Container (6).png" alt="" />
-            </a>
-          </div>
-          <div class="col-1">
-            <a href="#">
-              <img src="./assets/png/Container (7).png" alt="" />
-            </a>
+          <div>
+            <button></button>
+            <button></button>
           </div>
         </div>
+      </section>
+    </section>
+    <section>
+      <section class="wrapper">
+        <h2>SPECIAL OFFER</h2>
+        <div>
+          <div>
+            <span>40% off</span>
+            <span>Living Room Furniture</span>
+            <span>You don't have a chair. Are you ready for growth? Shop with us 40% discount!</span>
+            <div>
+              <span>$150</span>
+              <span>$250</span>
+            </div>
+            <div>
+              <button>SHOP NOW</button>
+            </div>
+            <div>
+              <span>10 DAYS</span>
+              <span>15 HRS</span>
+              <span>30 MIN</span>
+              <span>22 SECS</span>
+            </div>
+          </div>
+          <div>
+            <div>
+              <span>50% off</span>
+              <span>Modern chair</span>
+              <span>Hot chairs of the modern era are now available in our stock.</span>
+              <div>
+                <span>$75</span>
+                <span>$150</span>
+              </div>
+              <div>
+                <button>SHOP NOW</button>
+              </div>
+              <div>
+                <span>15 DAYS</span>
+                <span>08 HRS</span>
+                <span>20 MIN</span>
+                <span>12 SECS</span>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section>
+      <section class="wrapper">
+        <h2>OUR PRODUCTS</h2>
+      <ul>
+        <li><a href="#">All Products</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Todays Deals</a></li>
+      </ul>
+      </section>
+    </section>
+    <section>
+      <section class="wrapper">
+        <h2>What Our Customer Says</h2>
+        <div>
+          <blockquote>
+            <p>I like Furniking.com and as compared to other company it's polices and customers support is very good easy to reach., also many time they unable to delivered. The ultricies are pregnant while the quis is suspended. Risus commodo viverra maecenas accumsan lacus vel facilisist amet.</p>
+            <cite>Angelina Joly</cite>
+            <span>Co-founder</span>
+          </blockquote>
+        </div>        
       </section>
     </section>
   </body>
