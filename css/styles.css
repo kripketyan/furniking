@@ -649,7 +649,7 @@ body {
   align-items: flex-start;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 1px;
   width: 100%;
   height: 100%;
   pointer-events: none;
@@ -674,6 +674,10 @@ body {
 
 .product_label--green {
   background-color: #7AC751;
+}
+
+.product_label--red {
+  background-color: #FF6868;
 }
 
 .product_category {
@@ -859,6 +863,110 @@ body {
 .product_icon--eye:hover::after {
   background-image: url(../assets/svg/eye-white.svg);
 }
+
+.product_box {
+  margin-right: 143px;
+}
+
+.product_btn {
+  display: inline-flex;
+  justify-content: center;
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  align-items: baseline;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #7AC751;
+  border-radius: 2px;
+  padding: 12px 20px;
+}
+
+.product_btn::after {
+  content: "";
+  display: block;
+  background-image: url(../assets/svg/arrow-white.svg);
+  width: 14px;
+  height: 12px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+}
+
+.product_text {
+  font-family: Mulish;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  align-items: center;
+  letter-spacing: 0.008em;
+  color: #757575;
+}
+
+.product_input {
+  width: 58px;
+  height: 29px;
+  text-align: center;
+  background: #F8FAFB;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 2px;
+  letter-spacing: 0.008em;
+  color: #757575;
+  margin: 0 19px 0 9px;
+}
+
+.product_input:focus {
+  outline: none;
+}
+
+.product_controls {
+  display: flex;
+  justify-content: center;
+  width: 58px;
+  height: 28px;
+  background: #7AC751;
+  border-radius: 2px;
+  padding: 9px 0px 9px 5px;
+  margin-left: 23px;
+}
+
+.product_control {
+  background: #7AC751;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 6px;
+}
+
+.product_control--left {
+  background-image: url(../assets/svg/arrow-control-left.svg);
+  margin-right: 18px;
+}
+
+.product_control--right {
+  background-image: url(../assets/svg/arrow-control-right.svg);
+}
+
+.product_control--right:last-child {
+  margin-right: 0;
+}
+
+.product_btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.product_inner {
+  display: flex;
+}
+
+.products {
+  margin: 120px 0;
+}
+
 
 
 
