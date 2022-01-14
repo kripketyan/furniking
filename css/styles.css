@@ -967,12 +967,13 @@ body {
   margin: 120px 0;
 }
 
-.proposal_inner {
+.proposal {
   position: relative;
 }
 
 .proposal_img {
   display: block;
+  width: 100%;
 }
 
 .proposal_title {
