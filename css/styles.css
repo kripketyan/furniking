@@ -1130,7 +1130,7 @@ body {
   margin: 0;
 }
 
-.testimonial_inner {
+.testimonial {
   position: relative;
   display: flex;
   justify-content: center;
@@ -1144,7 +1144,7 @@ body {
   left: 46%;
 }
 
-.testimonial_title {
+.testimonials_title {
   margin: 120px 0 85px;
 }
 
@@ -1175,7 +1175,7 @@ body {
   background-image: url(../assets/svg/icon-slider-right.svg);
 }
 
-.article_wrapper {
+.article {
   margin-bottom: 22px;
 }
 
@@ -1248,7 +1248,7 @@ body {
   height: 100%;
 }
 
-.article_wrapper {
+.article {
   position: relative;
 }
 
@@ -1266,7 +1266,7 @@ body {
   align-items: center;
 }
 
-.title_article {
+.articles_title {
   margin-bottom: 56px;
 }
 
