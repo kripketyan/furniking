@@ -26,6 +26,10 @@ body {
   grid: auto-flow / repeat(2, 1fr);
 }
 
+.grid-3 {
+  grid: auto-flow / repeat(3, 1fr);
+}
+
 .row {
   display: flex;
   gap: 30px;
@@ -458,7 +462,7 @@ body {
 
 .feature {
   position: relative;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   margin: 70px 0;
 }
@@ -523,16 +527,25 @@ body {
 .offers-section {
   display: flex;
   height: 511px;
+  /* border: 1px solid black;
+  padding: 10px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
 }
 
 .offers-section_row {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  grid-column: 2;
+  /* border: 1px solid blue; */
+  height: 100%;
 }
 
 .offers-section_column {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  /* gap: 15px; */
 }
 
 .offer {
@@ -540,6 +553,12 @@ body {
   flex-direction: column;
   padding: 40px 25px;
   position: relative;
+}
+
+.offers {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  /* border: 1px solid red; */
 }
 
 .offer_img {
@@ -560,12 +579,17 @@ body {
   color: var(--grey);
 }
 
+/* .offer:first-child .offer_discount {
+  margin: 10px 0;
+} */
+
 .offer_discount {
   font-family: Mulish;
   font-weight: 600;
   font-size: 20px;
   line-height: 26px;
   color: var(--green);
+  margin: 10px 0;
 }
 
 .offer_description {
@@ -1573,39 +1597,6 @@ body {
     margin: 0 0 60px;
   }
 
-  /* .product_category {
-    font-size: 12px;
-  }
-
-  .product_title {
-    font-size: 17px;
-  }
-
-  .product_current-price {
-    font-size: 15px;
-    margin-right: 3px;
-  }
-
-  .product_old-price {
-    font-size: 15px;
-  }
-
-  .product_label {
-    font-size: 10px;
-    width: 40px;
-    height: 15px;
-  } */
-
-  /* .proposal_label {
-    font-size: 10px;
-    width: 55px;
-    height: 20px;
-  } */
-
-  /* .products {
-    margin: 0;
-  } */
-
   .products {
     margin: 0;
   }
@@ -1622,10 +1613,6 @@ body {
     width: 100%;
   }
 
-  /* .col-2-md { 
-    width: 50%;
-  } */
-
   .column-md {
     flex-direction: column;
   }
@@ -1641,25 +1628,6 @@ body {
   .proposal:last-child {
     margin-bottom: 0;
   }
-
-  /* .product_box {
-    margin-right: 120px;
-  }
-
-  .product_btn {
-     font-size: 16px;
-    padding: 10px 15px;
-  }
-
-  .product_text {
-    font-size: 16px;
-    align-items: center;
-    display: flex;
-  }
-
-  .product_controls {
-    margin-left: 20px;
-} */
 
   .testimonial_position {
     font-size: 14px;
@@ -1737,6 +1705,304 @@ body {
     width: 35px;
     height: 35px;
     margin: 4px 5px 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  header, .nav, section, footer {
+    overflow: hidden;
+  } 
+
+  .wrapper {
+    margin: 0 10px;
+  }
+
+  .grid-1-sm {
+    grid: auto-flow / repeat(1, 1fr);
+  }
+
+  .title {
+    font-size: 25px;
+    margin: 50px 0 25px;
+    line-height: 35px;
+  }
+
+  .trending_link {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .slider_container {
+    overflow: hidden;
+  }
+
+  .nav_categories {
+    display: none;
+  }
+
+  .nav_title {
+    display: none;
+  }
+
+  .trending_list {
+    margin: 0 0 40px;
+  }
+
+  .trending_item {
+    margin-right: 25px;
+  }
+
+  .logo_text {
+    font-size: 20px;
+  }
+
+  .header_text {
+    font-size: 9px;
+    line-height: 15px;
+    margin-right: 20px;
+  }
+
+  .header_search {
+    display: none;
+  }
+
+  .product_category {
+    font-size: 12px;
+  }
+
+  .product_title {
+    font-size: 17px;
+  }
+
+  .product_current-price {
+    font-size: 15px;
+    margin-right: 3px;
+  }
+
+  .product_old-price {
+    font-size: 15px;
+  }
+
+  .product_label {
+    font-size: 10px;
+    width: 40px;
+    height: 15px;
+  } 
+
+  .proposal_label {
+    font-size: 10px;
+    width: 55px;
+    height: 20px;
+  }
+
+  .products {
+    margin: 0;
+  }
+
+  .header_link--basket {
+    margin-right: 15px;
+  }
+
+  .header_link--notification {
+    margin-right: 15px;
+  }
+
+  .nav_list {
+    align-items: center;
+  }
+
+  .nav_pages {
+    padding: 15px 0;
+    padding-left: 0;
+  }
+
+  .nav_item {
+    margin-right: 20px;
+  }
+
+  .product_box {
+    margin-right: 120px;
+  }
+
+  .product_btn {
+     font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .product_text {
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+  }
+
+  .product_controls {
+    margin-left: 20px;
+  }
+
+  .proposal_time {
+    display: none;
+  }
+
+  .proposal_box {
+    margin: 13px 0 15px;
+  }
+
+  .proposal_btn {
+    padding: 8px 10px;
+    margin-left: 15px;
+    font-size: 10px;
+  }
+
+  .proposal_title {
+    font-size: 20px;
+    line-height: 15px;
+  }
+
+  .proposal_text {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .proposal_container {
+    padding: 20px 20px 0;
+  }
+
+  .proposal {
+    margin-bottom: 10px;
+  }
+
+  /* .footer_text {
+    font-size: 16px;
+    line-height: 25px;
+    /* margin: 18px 0; */
+  /* }
+
+  .footer_item-social:first-child {
+    margin-left: 0;
+  } */
+/* 
+  .footer_item-social {
+    margin-right: 20px;
+}  */
+
+  .footer_link {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .footer_inner {
+    display: none;
+    margin: 0 30px 0 0;
+    /* width: 318px; */
+  }
+
+  .footer_list {
+    margin-right: 35px;
+  }
+
+  .footer {
+    margin: 50px 0 30px;
+  }
+
+  .testimonial_img {
+    width: 75px;
+    height: 75px;
+    top: -10%;
+    left: 40%;
+  }
+
+  .testimonial_text {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .testimonial_author {
+    font-size: 20px;
+    margin: 25px 0 8px;
+  }
+
+  .testimonial_position {
+    font-size: 14px;
+  }
+
+  .testimonial_bq {
+    padding: 55px 0 35px;
+  }
+
+  .testimonials_title {
+    font-size: 25px;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .article_wrap {
+    padding: 3px 6px;
+    margin-right: 5px;
+  }
+
+  .article_icon {
+    font-size: 12px;
+  }
+
+  .article_data {
+    font-size: 14px;
+  }
+
+  .article_title {
+    font-size: 25px;
+    line-height: 110%;
+    margin: 5px 0 5px;
+  }
+
+  .article_text {
+    font-size: 14px;
+    line-height: 130%;
+    }
+
+  .article_inner {
+    padding: 0 10px 0;
+  }
+
+  .header_text--divide::after {
+    height: 13px;
+    top: 21px;
+    right: 83px;
+  }
+
+  .header_text--select::after {
+    background-size: 8px;
+     height: 9px;
+    top: 25px;
+    right: 88px;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .feature_wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .offers-section_row {
+    grid-column: 1;
+  }
+
+  .offers-section {
+    height: unset;
+  }
+
+  .offer_name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .offer_discount {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 5px 0;
   }
 }
 
